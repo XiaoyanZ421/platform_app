@@ -1,0 +1,163 @@
+
+.msg-detail-page[data-v-5e9a89a0] {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+/* 图表容器 */
+.charts-container[data-v-5e9a89a0] {
+  padding: 20px;
+  background: #fff;
+  margin: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.charts-title[data-v-5e9a89a0] {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.charts-grid[data-v-5e9a89a0] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* 图表卡片 */
+.chart-card[data-v-5e9a89a0] {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #e9ecef;
+}
+.chart-header[data-v-5e9a89a0] {
+  font-size: 14px;
+  font-weight: 600;
+  color: #495057;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.chart-content[data-v-5e9a89a0] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 环形图样式 */
+.chart-ring[data-v-5e9a89a0] {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 12px;
+}
+.ring-bg[data-v-5e9a89a0] {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.ring-bg[data-v-5e9a89a0]::before {
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: #fff;
+}
+.ring-inner[data-v-5e9a89a0] {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.ring-value[data-v-5e9a89a0] {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2665AA;
+  line-height: 1.2;
+}
+.ring-label[data-v-5e9a89a0] {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.2;
+}
+
+/* 图例样式 */
+.chart-legend[data-v-5e9a89a0] {
+  width: 100%;
+}
+.legend-item[data-v-5e9a89a0] {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.legend-color[data-v-5e9a89a0] {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+.legend-text[data-v-5e9a89a0] {
+  color: #666;
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+/* 颜色定义 */
+.legend-blue[data-v-5e9a89a0] {
+  background-color: #2665AA;
+}
+.legend-green[data-v-5e9a89a0] {
+  background-color: #4CAF50;
+}
+.legend-orange[data-v-5e9a89a0] {
+  background-color: #FF9800;
+}
+.legend-purple[data-v-5e9a89a0] {
+  background-color: #9C27B0;
+}
+.legend-red[data-v-5e9a89a0] {
+  background-color: #FF5722;
+}
+.legend-dark-red[data-v-5e9a89a0] {
+  background-color: #F44336;
+}
+
+/* 环形图背景样式 */
+.ring-type-1[data-v-5e9a89a0] {
+  background: conic-gradient(#2665AA 25%, #4CAF50 25% 87%, #FF9800 87%);
+}
+.ring-type-2[data-v-5e9a89a0] {
+  background: conic-gradient(#2665AA 25%, #FF9800 25%);
+}
+.ring-type-3[data-v-5e9a89a0] {
+  background: conic-gradient(#2665AA 25%, #4CAF50 25% 48%, #FF9800 48% 79%, #9C27B0 79%);
+}
+.ring-type-4[data-v-5e9a89a0] {
+  background: conic-gradient(#4CAF50 80%, #FF9800 80% 95%, #FF5722 95% 99.9%, #F44336 99.9%);
+}
+
+/* 响应式适配 */
+@media (max-width: 375px) {
+.charts-grid[data-v-5e9a89a0] {
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+.chart-ring[data-v-5e9a89a0] {
+    width: 80px;
+    height: 80px;
+}
+.ring-value[data-v-5e9a89a0] {
+    font-size: 14px;
+}
+.ring-label[data-v-5e9a89a0] {
+    font-size: 11px;
+}
+}
